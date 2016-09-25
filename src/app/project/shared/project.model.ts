@@ -6,5 +6,5 @@ export class Project {
   id: number;
   name: string;
   description: string;
-  scenarios: Array<Scenario>
+  scenarios: Array<Scenario>;
 }

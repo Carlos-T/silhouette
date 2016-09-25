@@ -10,7 +10,7 @@ import { ProjectService, Project } from './shared';
 export class ProjectComponent implements OnInit {
   project: Project;
   constructor(index: number) {
-    var projectService = new ProjectService;
+    let projectService = new ProjectService;
 
     this.project = projectService.getProject(index);
   }

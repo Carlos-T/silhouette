@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Project } from '../types/project';
+import { Project } from './';
 
 @Injectable()
 export class ProjectService {
@@ -72,7 +72,7 @@ export class ProjectService {
       return {name: item.name, id: item.id};
     });
   }
-  getProject(id: number) :Project{
-    return this.projects.find(item => item.id == id);
+  getProject(id: number): Project {
+    return this.projects.find(item => item.id === id);
   }
 }
