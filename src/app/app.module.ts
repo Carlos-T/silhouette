@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { ProjectComponent } from './project/project.component';
 import { AboutComponent } from './about/about.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
@@ -16,7 +16,7 @@ import { routing } from './app.routing';
   ],
   declarations: [
     AppComponent,
-    HomeComponent,
+    ProjectComponent,
     AboutComponent
   ],
   providers: [

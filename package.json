@@ -22,6 +22,7 @@
     "docs": "typedoc --options typedoc.json src/app/app.component.ts",
     "start": "rimraf dist && webpack --progress --profile --bail && electron .",
     "start-watch": "rimraf dist && webpack --progress --profile --bail --watch",
+    "i": "rimraf dist && webpack --progress --profile --bail --watch",
     "postinstall": "npm run webdriver-update && typings install"
   },
   "dependencies": {

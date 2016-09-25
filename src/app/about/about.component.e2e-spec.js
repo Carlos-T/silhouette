@@ -5,9 +5,9 @@ describe('About', function () {
   });
 
   it('should have <my-about>', function () {
-    var home = element(by.css('my-app my-about'));
-    expect(home.isPresent()).toEqual(true);
-    expect(home.getText()).toEqual("About Works!");
+    var project = element(by.css('my-app my-about'));
+    expect(project.isPresent()).toEqual(true);
+    expect(project.getText()).toEqual("About Works!");
   });
 
 });

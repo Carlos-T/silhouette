@@ -1,16 +1,28 @@
 <header>
-  <nav>
-    <a [routerLink]="['']">Home</a>
-    <a [routerLink]="['about']">About</a>
-  </nav>
 </header>
 <main>
-  <h1 class='title'>Hello from {{api.title}}!</h1>
-
+  <div class="window">
+    <div class="window-content">
+      <div class="pane-group">
+        <div class="pane-sm sidebar">
+          <nav class="nav-group">
+            <h5 class="nav-group-title">Projects</h5>
+            <!-- <a class="nav-group-item active" [routerLink]="['']"> -->
+            <a *ngFor="let project of api.projects" class="nav-group-item">
+              <span class="icon icon-home"></span> {{project.name}}
+            </a>
+          </nav>
+        </div>
+        <div class="pane">
+          <h1 class='title'>Hello from {{api.title}}!</h1>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Images (and assets) are parsed and loaded from within the public directory -->
-  <img src="./img/angular.png">
+  <!-- <img src="./img/angular.png"> -->
 
-  <router-outlet></router-outlet>
 </main>
 <footer>
   <a [href]="url">Webpack Angular 2 Starter</a>
