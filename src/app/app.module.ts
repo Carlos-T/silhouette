@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
-import { AboutComponent } from './about/about.component';
+import { SettingsComponent } from './settings/settings.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
 
@@ -17,7 +17,7 @@ import { routing } from './app.routing';
   declarations: [
     AppComponent,
     ProjectComponent,
-    AboutComponent
+    SettingsComponent
   ],
   providers: [
     ApiService

@@ -6,7 +6,7 @@ import { TestBed } from '@angular/core/testing';
 import { ProjectComponent } from './project.component';
 
 describe('Project Component', () => {
-  const html = '<my-project></my-project>';
+  const html = '<sil-project></sil-project>';
 
   beforeEach(() => {
     TestBed.configureTestingModule({declarations: [ProjectComponent, TestComponent]});

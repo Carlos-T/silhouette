@@ -9,7 +9,7 @@ import '../style/app.scss';
  * Top Level Component
  */
 @Component({
-  selector: 'my-app', // <my-app></my-app>
+  selector: 'sil-app', // <sil-app></sil-app>
   template: require('./app.component.html'),
   styles: [require('./app.component.scss')],
 })
