@@ -4,10 +4,10 @@
       <div class="pane-sm sidebar">
         <nav class="nav-group">
           <h5 class="nav-group-title">Projects</h5>
-          <!-- <a class="nav-group-item active" [routerLink]="['']"></a> -->
-          <!-- <a *ngFor="let project of api.projects" class="nav-group-item">
-            <span class="icon icon-home"></span> {{project.name}}
-          </a> -->
+          <a *ngFor="let proj of projects" class="nav-group-item active" (click)="loadProject(proj.id)">
+            <span class="icon icon-home"></span>
+            <span [innerHtml]="proj.name"></span>
+          </a>
         </nav>
       </div>
       <div class="pane">

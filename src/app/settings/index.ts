@@ -1,1 +1,1 @@
-export * from './about.component';
+export * from './settings.component';

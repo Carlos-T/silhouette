@@ -24,11 +24,12 @@ export class ProjectComponent implements OnInit {
     console.log('Hello Project');
   }
 
-  loadProject(index: number) {
-    console.log('loading project ' + index);
-    let projectService = new ProjectService;
+  public loadProject(index: number) {
+    if (!this.project || this.project.id !== index) {
+      console.log('loading project ' + index);
+      let projectService = new ProjectService;
 
-    this.project = projectService.getProject(index);
+      this.project = projectService.getProject(index);
+    }
   }
-
 }
