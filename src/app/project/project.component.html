@@ -8,13 +8,35 @@
             <span class="icon icon-home"></span>
             <span [innerHtml]="proj.name"></span>
           </a>
+          <a class="nav-group-item" (click)="startCreatingProject()" *ngIf="!creating">
+            <span class="icon icon-plus"></span>
+            <span>New project</span>
+          </a>
+          <span class="nav-group-item new-project" (ngModel)="newProjectName" *ngIf="creating">
+            <input type="text">
+            <button (click)="createProject()">
+              <span class="icon icon-plus"></span>
+            </button>
+          </span>
         </nav>
       </div>
       <div class="pane">
-        <h1 class='title'>
-          Project works!
-          <!-- Hello from {{api.title}}! -->
-        </h1>
+        <h1 class="title" [innerHtml]="project.name"></h1>
+        <div class="project-content">
+          <a *ngFor="let scenario of project.scenarios">
+            <div [innerHtml]="scenario.name"></div>
+            <div class="scenario-content">
+              <a *ngFor="let call of scenario.calls">
+                <div [innerHtml]="call.name"></div>
+                <div class="call-content">
+                  <div [innerHtml]="call.path"></div>
+                </div>
+              </a>
+              <a>Add call</a>
+            </div>
+          </a>
+          <a>Add scenario</a>
+        </div>
       </div>
     </div>
   </div>

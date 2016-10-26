@@ -12,11 +12,11 @@ export class ProjectService {
       description: 'Im a projet',
       scenarios: [{
         id: 0,
-        name: 'Scenario1',
+        name: 'Scenario11',
         description: 'This is an sceario',
         calls: [{
           id: 0,
-          name: 'Call1',
+          name: 'Call111',
           description: 'This is a call',
           path: 'blah/blah/blah',
           inputJson: {
@@ -27,7 +27,7 @@ export class ProjectService {
           }
         }, {
           id: 1,
-          name: 'Call2',
+          name: 'Call112',
           description: 'This is a call',
           path: 'blah/blah/blah',
           inputJson: {
@@ -39,11 +39,11 @@ export class ProjectService {
         }]
       }, {
         id: 1,
-        name: 'Scenario2',
+        name: 'Scenario12',
         description: 'This is an sceario',
         calls: [{
           id: 2,
-          name: 'Call1',
+          name: 'Call121',
           description: 'This is a call',
           path: 'blah/blah/blah',
           inputJson: {
@@ -54,7 +54,66 @@ export class ProjectService {
           }
         }, {
           id: 3,
-          name: 'Call2',
+          name: 'Call122',
+          description: 'This is a call',
+          path: 'blah/blah/blah',
+          inputJson: {
+            what: 'd\'oh'
+          },
+          outputJson: {
+            non: 'sense'
+          }
+        }]
+      }]
+    }, {
+      id: 1,
+      name: 'Project2',
+      description: 'Im a projet',
+      scenarios: [{
+        id: 2,
+        name: 'Scenario21',
+        description: 'This is an sceario',
+        calls: [{
+          id: 5,
+          name: 'Call211',
+          description: 'This is a call',
+          path: 'blah/blah/blah',
+          inputJson: {
+            what: 'd\'oh'
+          },
+          outputJson: {
+            non: 'sense'
+          }
+        }, {
+          id: 6,
+          name: 'Call212',
+          description: 'This is a call',
+          path: 'blah/blah/blah',
+          inputJson: {
+            what: 'd\'oh'
+          },
+          outputJson: {
+            non: 'sense'
+          }
+        }]
+      }, {
+        id: 3,
+        name: 'Scenario22',
+        description: 'This is an sceario',
+        calls: [{
+          id: 7,
+          name: 'Call221',
+          description: 'This is a call',
+          path: 'blah/blah/blah',
+          inputJson: {
+            what: 'd\'oh'
+          },
+          outputJson: {
+            non: 'sense'
+          }
+        }, {
+          id: 8,
+          name: 'Call222',
           description: 'This is a call',
           path: 'blah/blah/blah',
           inputJson: {

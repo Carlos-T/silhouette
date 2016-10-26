@@ -2,3 +2,31 @@
 * {
   color: #383838;
 }
+
+.new-project {
+  input {
+    width: 85px;
+  }
+  button {
+    height: 28px;
+    position: relative;
+    top: 6px;
+    .icon {
+      width: 10px;
+      margin: 0;
+      height: 20px;
+      line-height: normal;
+    }
+  }
+}
+
+.project-content {
+  text-align: left;
+  margin-left: 15px;
+  .scenario-content {
+    margin-left: 15px;
+    .call-content {
+      margin-left: 15px;
+    }
+  }
+}

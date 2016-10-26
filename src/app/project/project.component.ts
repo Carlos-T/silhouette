@@ -10,12 +10,18 @@ import { ProjectService, Project } from './shared';
 export class ProjectComponent implements OnInit {
   projects: Array<{}>;
   project: Project;
+  creating: boolean;
+  newProjectName: string;
+
   constructor() {
     let projectService = new ProjectService;
 
+    this.newProjectName = 'pataticas';
+    this.creating = false;
     this.projects = projectService.getProjects();
+
     if (this.projects.length > 0) {
-      console.log('There are more projects', this.projects.length);
+      console.log('There are projects', this.projects.length);
       this.loadProject(0);
     }
   }
@@ -25,11 +31,20 @@ export class ProjectComponent implements OnInit {
   }
 
   public loadProject(index: number) {
+    console.log(this.project);
     if (!this.project || this.project.id !== index) {
       console.log('loading project ' + index);
       let projectService = new ProjectService;
 
       this.project = projectService.getProject(index);
     }
+  }
+
+  public startCreatingProject() {
+    this.creating = true;
+  }
+
+  public createProject() {
+    console.log('creating project', this.newProjectName);
   }
 }
